@@ -9,7 +9,7 @@ const creditSchema = new mongoose.Schema({
 
 const debtSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  value: { type: Number, mon: 0, required: true },
+  value: { type: Number, mon: 0, required: [true, 'Informe o valor do débito!'] },
   status: {
     type: String,
     required: false,
