@@ -26,7 +26,7 @@ const billingCycleSchema = new mongoose.Schema({
     max: 12,
     required: true,
   },
-  yar: {
+  year: {
     type: Number,
     min: 1970,
     max: 2100,
